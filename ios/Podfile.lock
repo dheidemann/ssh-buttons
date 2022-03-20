@@ -1,0 +1,35 @@
+PODS:
+  - Flutter (1.0.0)
+  - NMSSH (2.3.1)
+  - path_provider (0.0.1):
+    - Flutter
+  - ssh (0.0.7):
+    - Flutter
+    - NMSSH
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - ssh (from `.symlinks/plugins/ssh/ios`)
+
+SPEC REPOS:
+  trunk:
+    - NMSSH
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+  ssh:
+    :path: ".symlinks/plugins/ssh/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  NMSSH: cd689ae535a1581a6dd9fd4600ff71247df510a6
+  path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
+  ssh: ab4d3c3430b97acae3f396432952d6bf502c40c6
+
+PODFILE CHECKSUM: 408c45d0cefabe3aa790af2219d50397d6b48436
+
+COCOAPODS: 1.10.2
