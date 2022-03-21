@@ -3,12 +3,12 @@ import 'package:flutter/services.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:ssh/ssh.dart';
 
-Future<void> commandAtHost(
+Future<bool> commandAtHost(
     {required String host,
     required String user,
     required String pw,
     required String command}) async {
-  var client = new SSHClient(
+  var client = SSHClient(
     host: host,
     port: 22,
     username: user,
@@ -34,5 +34,7 @@ Future<void> commandAtHost(
     await client.writeToShell(command);
   } on PlatformException catch (e) {
     print('Error: ${e.code}\nError Message: ${e.message}');
+    return false;
   }
+  return true;
 }

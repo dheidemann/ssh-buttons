@@ -1,5 +1,5 @@
 name: ssh_buttons
-description: A new Flutter project.
+description: just execute shell scripts on remote machines via custom buttons and groups. nothing more
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
